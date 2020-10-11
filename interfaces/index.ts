@@ -5,6 +5,25 @@
 // import User from 'path/to/interfaces';
 
 export type User = {
-  id: number
-  name: string
-}
+  id: number;
+  name: string;
+};
+
+export type LayoutArticleProps = {
+  content?: string;
+  meta?: {
+    title?: string;
+    description?: string;
+    cartImage?: string;
+    date?: string;
+  };
+};
+
+export type ArticleProps = {
+  slug: string;
+  title: string;
+};
+
+export type ArticlesProps = {
+  articles: ArticleProps[];
+};
