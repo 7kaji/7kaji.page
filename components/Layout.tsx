@@ -85,7 +85,7 @@ const Layout = ({ children, meta: pageMeta }: Props) => {
                 href="https://github.com/7kaji/7kaji.page"
                 className="no-underline font-semibold text-gray-700"
               >
-                🧑‍💻 ソース
+                🧑‍💻
               </a>
             </li>
           </ul>
