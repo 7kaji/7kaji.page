@@ -66,13 +66,13 @@ const LayoutArticle: FC<LayoutArticleProps> = (props) => {
         <a href="#skip" className="sr-only focus:not-sr-only">
           Skip to content
         </a>
-        <div className="flex justify-between items-center p-8 mx-2">
+        <div className="flex justify-between items-center p-6 mx-2">
 
-          <ul className="flex justify-between items-center space-x-2">
+          <ul className="flex justify-between items-center">
             <li>
               <div className="inline-block relative w-24">
                 <Link href="/">
-                  <a className="no-underline font-semibold invisible sm:visible">
+                  <a className="no-underline font-semibold">
                     <p>🏠 ホーム</p>
                   </a>
                 </Link>
@@ -81,7 +81,7 @@ const LayoutArticle: FC<LayoutArticleProps> = (props) => {
             <li>
               <div className="inline-block relative w-24">
                 <Link href="/articles">
-                  <a className="no-underline font-semibold invisible sm:visible">
+                  <a className="no-underline font-semibold">
                     <p>📖 記事一覧</p>
                   </a>
                 </Link>
@@ -89,14 +89,9 @@ const LayoutArticle: FC<LayoutArticleProps> = (props) => {
             </li>
           </ul>
 
-          <div className="no-underline font-semibold invisible sm:visible">
-            <h1>{meta.title}</h1>
-            <p className="flex justify-center">{publishedAtText}</p>
-          </div>
-
-          <ul className="flex justify-between items-center space-x-4">
+          <ul className="flex justify-between items-center space-x-1">
             <li>
-              <div className="inline-block relative w-32">
+              <div className="inline-block relative w-24">
                 <select
                   onChange={(e) => setTheme(e.target.value)}
                   value={theme}
@@ -110,19 +105,24 @@ const LayoutArticle: FC<LayoutArticleProps> = (props) => {
               </div>
             </li>
             <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/7kaji/7kaji.page"
-                className="no-underline font-semibold text-gray-700"
-              >
-                🧑‍💻 ソース
-              </a>
+              <div className="inline-block relative w-8 text-center">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/7kaji/7kaji.page"
+                  className="no-underline font-semibold text-gray-700"
+                >
+                  🧑‍💻
+                </a>
+              </div>
             </li>
           </ul>
         </div>
       </nav>
       <div id="skip">
+        <p className="prose lg:prose-xl px-6 m-auto my-4 sm:my-16">
+          {publishedAtText}
+        </p>
         <article
           className="prose lg:prose-xl px-8 m-auto my-4 sm:my-16"
           dangerouslySetInnerHTML={{ __html: props.children as string }}
