@@ -1,22 +1,33 @@
 import fs from 'fs';
 import generateRss from '../../lib/rss';
 import { getAllDocs } from '../../lib/doc';
-import { ArticlesProps } from '../../interfaces';
+import { Article } from '../../interfaces';
 import Layout from '../../components/Layout';
-import Articles from '../../components/Articles';
+import Link from 'next/link';
 
-export default function Docs(props: ArticlesProps) {
+type Articles = {
+  articles: Article[];
+};
+
+const articles = (props: Articles) => {
   const meta = {
     title: "記事一覧",
     description: '記事一覧です。'
   }
+
   return (
     <Layout meta={meta}>
       <h1>記事一覧</h1>
-      <Articles articles={props.articles} />
+      <ul>
+        {props.articles.map((article) => (
+          <li key={article.slug}>
+            <Link href={`articles/${article.slug}`}><a>{article.title}</a></Link>
+          </li>
+        ))}
+      </ul>
     </Layout>
   );
-}
+};
 
 export async function getStaticProps() {
   const docs = getAllDocs().reverse();
@@ -33,3 +44,5 @@ export async function getStaticProps() {
     }
   };
 }
+
+export default articles;

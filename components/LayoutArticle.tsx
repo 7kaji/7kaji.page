@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import Head from 'next/head';
 import { useState, FC } from 'react';
-import { LayoutArticleProps } from '../interfaces'
+import { Article } from '../interfaces'
 
-const LayoutArticle: FC<LayoutArticleProps> = (props) => {
+const LayoutArticle: FC<Article> = (props) => {
   const [theme, setTheme] = useState('okaidia');
   const meta = {
     title: '🏠',

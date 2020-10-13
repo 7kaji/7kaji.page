@@ -1,17 +1,9 @@
 import LayoutArticle from '../../components/LayoutArticle';
-import { LayoutArticleProps } from '../../interfaces';
+import { Article } from '../../interfaces';
 import { getAllDocs, getDocBySlug } from '../../lib/doc';
 import markdownToHtml from '../../lib/markdown';
 
-// 実行の順番
-// 1. getStaticPaths()
-//   実行されるタイミング
-//     - 開発時: リクエスト毎
-//     - 本番時: ビルド時
-// 2. getStaticProps()
-// 3. Doc()
-
-export default function Doc(props: LayoutArticleProps) {
+const article = (props: Article) => {
   return <LayoutArticle meta={props.meta}>{props.content}</LayoutArticle>;
 }
 
@@ -41,3 +33,5 @@ export async function getStaticPaths() {
     fallback: 'unstable_blocking'
   };
 }
+
+export default article;
