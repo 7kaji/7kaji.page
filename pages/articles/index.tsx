@@ -5,9 +5,9 @@ import Articles from '../../components/Articles';
 
 export default function Docs(props: ArticlesProps) {
   const meta = {
-    title: "",
+    title: "記事一覧",
     description: '記事一覧です。'
-  };
+  }
   return (
     <Layout meta={meta}>
       <h1>記事一覧</h1>

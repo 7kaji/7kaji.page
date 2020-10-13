@@ -18,7 +18,7 @@ const Layout = ({ children, meta: pageMeta }: Props) => {
     title: '',
     description:
       '',
-    date: '2020-01-01T00:00:00+09:00',
+    // date: '2020-01-01T00:00:00+09:00',
     cardImage:
       'https://og-image.now.sh/**Prism**%20with%20Next.js.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-white-logo.svg',
     ...pageMeta
@@ -72,10 +72,6 @@ const Layout = ({ children, meta: pageMeta }: Props) => {
               </div>
             </li>
           </ul>
-
-          <div className="no-underline font-semibold invisible sm:visible">
-            <h1>{meta.title}</h1>
-          </div>
 
           <ul className="flex justify-between items-center space-x-4">
             <li>
