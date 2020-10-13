@@ -4,19 +4,18 @@
 //
 // import User from 'path/to/interfaces';
 
-export type User = {
-  id: number;
-  name: string;
+type meta = {
+  // title?: string;
+  // description?: string;
+  // cardImage?: string;
+  // date?: string;
+  [key: string]: any;
 };
 
 export type LayoutArticleProps = {
+  slug?: string;
   content?: string;
-  meta?: {
-    title?: string;
-    description?: string;
-    cartImage?: string;
-    date?: string;
-  };
+  meta: meta;
 };
 
 export type ArticleProps = {
