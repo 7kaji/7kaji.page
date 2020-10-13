@@ -1,6 +1,6 @@
-import { LayoutArticleProps } from '../interfaces';
+import { Article } from '../interfaces';
 
-const generateRssItem = (article: LayoutArticleProps): string => `
+const generateRssItem = (article: Article): string => `
   <item>
     <guid>https://7kaji.page/articles/${article.slug}</guid>
     <title>${article.meta.title}</title>
@@ -10,7 +10,7 @@ const generateRssItem = (article: LayoutArticleProps): string => `
   </item>
 `;
 
-const generateRss = (articles: LayoutArticleProps[]): string => `
+const generateRss = (articles: Article[]): string => `
   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
       <title>7kaji.page | 記事一覧</title>

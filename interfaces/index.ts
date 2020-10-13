@@ -12,17 +12,9 @@ type meta = {
   [key: string]: any;
 };
 
-export type LayoutArticleProps = {
+export type Article = {
   slug?: string;
+  title?: string;
   content?: string;
   meta: meta;
-};
-
-export type ArticleProps = {
-  slug: string;
-  title: string;
-};
-
-export type ArticlesProps = {
-  articles: ArticleProps[];
 };
