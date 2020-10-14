@@ -6,8 +6,8 @@ declare module 'remark-prism';
 interface Window {
   // pageview
   gtag(
-    type: 'config',
-    googleAnalyticsId: string,
+    string,
+    string,
     { page_path: string }
   )
   // event
