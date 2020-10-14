@@ -1061,6 +1061,11 @@
   resolved "https://registry.yarnpkg.com/@types/browserslist/-/browserslist-4.8.0.tgz#60489aefdf0fcb56c2d8eb65267ff08dad7a526d"
   integrity sha512-4PyO9OM08APvxxo1NmQyQKlJdowPCOQIy5D/NLO3aO0vGC57wsMptvGp3b8IbYnupFZr92l1dlVief1JvS6STQ==
 
+"@types/gtag.js@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@types/gtag.js/-/gtag.js-0.0.3.tgz#bbc414030b2143fc7874260ab825aac82c42928e"
+  integrity sha512-iRF/4Q3G1t0OTNMjK52tpGSQPgEsYzWQL1IdVXt9BywK6MUK3ypB7LaoEQa8sW9gPXENoU1xAyCxqJhMkB2rCA==
+
 "@types/hast@^2.0.0":
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/@types/hast/-/hast-2.3.1.tgz#b16872f2a6144c7025f296fb9636a667ebb79cd9"
