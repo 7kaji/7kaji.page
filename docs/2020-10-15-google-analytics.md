@@ -2,6 +2,7 @@
 title: 'Google Analytics 対応した'
 description: 'サイトを Google Analytics に対応させた'
 date: '2020-10-15T00:00:00+09:00'
+cardImage: 'https://7kaji.page/images/2020-10-15-ga.png'
 ---
 
 # Google Analytics 対応
