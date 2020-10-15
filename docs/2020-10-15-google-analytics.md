@@ -8,12 +8,11 @@ date: '2020-10-15T00:00:00+09:00'
 
  <img src="/images/2020-10-15-ga.png" alt="2020-10-15-ga-image" />
 
-サイト自体を Google Analytics に対応させた。Next.js は、いろいろなサンプルが [ここ](https://github.com/vercel/next.js/tree/canary/examples/) で見れるっぽいんだけど、Google Analytics の対応サンプルもあったのでここを参考に設定した。
+サイト自体を Google Analytics に対応させた。Next.js は、いろいろなサンプルが [ここ](https://github.com/vercel/next.js/tree/canary/examples/) で見れるっぽいんだけど、Google Analytics の対応サンプルもあったので [これ](https://github.com/vercel/next.js/tree/canary/examples/with-google-analytics) を参考に設定した。
 
 ## TypeScript 対応
 
-
-ほぼほぼ、サンプルを真似てやれば問題なさそうだけど、gtag メソッドの型定義のところでエラーがでているので、`next-env.d.ts に追加して回避した。
+ほぼほぼ、サンプルを真似てやれば問題なさそうだけど、gtag メソッドの型定義のところでエラーがでているので、`next-env.d.ts` に追加して回避した。
 
 ```ts
 // next-env.d.ts
