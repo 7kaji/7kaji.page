@@ -3,19 +3,14 @@ import Layout from '../components/Layout'
 
 const AboutPage = () => {
   const meta = {
-    title: 'About',
+    title: 'このサイトについて',
     description: 'このサイトについて',
   };
 
   return (
     <Layout meta={meta}>
-      <h1>About</h1>
-      <p>This is the about page</p>
-      <p>
-        <Link href="/">
-          <a>Go home</a>
-        </Link>
-      </p>
+      <h1>このサイトについて</h1>
+      <p>ここに説明をかく</p>
     </Layout>
   );
 }

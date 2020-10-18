@@ -9,7 +9,7 @@ const IndexPage = () => {
 
   return (
     <Layout meta={meta} >
-      <h1>Hello <span className="wave">👋</span></h1>
+      <h1>こんにちは <span className="wave">👋</span></h1>
       <p>
         <Link href="/about">
           <a>About</a>
